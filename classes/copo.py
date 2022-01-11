@@ -31,3 +31,7 @@ class Copo(Recipiente):
     
     def __repr__(self) -> str:
         return f'Um copo vazio de {float(self.tamanho)}ml' if self.conteudo == 0 else f'Um copo de {float(self.tamanho)}ml contendo {float(self.conteudo)}ml de {self.bebida}'
+
+    def __str__(self) -> str:
+        return f'Um copo vazio de {float(self.tamanho)}ml' if self.conteudo == 0 else f'Um copo de {float(self.tamanho)}ml contendo {float(self.conteudo)}ml de {self.bebida}'
+        
